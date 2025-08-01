@@ -73,7 +73,7 @@ public class CoasterGen : MonoBehaviour
 
         }
 
-        GenerateCylinders(pointsPosts, pointsPostsGround, new List<Vector3>(), new List<Vector3>(), meshPosts, PostBar.GetComponent<MeshFilter>(), radiusPosts);
+        GenerateCylinders(pointsPostsGround, pointsPosts, new List<Vector3>(), new List<Vector3>(), meshPosts, PostBar.GetComponent<MeshFilter>(), radiusPosts);
         Debug.Log(new Vector2(pointsPosts[0][0], curveGenorator.controlPoints[0].position[0]));
         //Debug.Log(pointsPostsGround);
 
@@ -150,7 +150,7 @@ public class CoasterGen : MonoBehaviour
             for (int j = 0; j < radialSegments; j++)
             {
                 float angle = j * Mathf.PI * 2f / radialSegments;
-                Vector3 radialPoint = center + right * Mathf.Cos(angle) * radiusInners + up * Mathf.Sin(angle) * radiusInners;
+                Vector3 radialPoint = center + right * Mathf.Cos(angle) * radius+ up * Mathf.Sin(angle) * radius;
                 vertices.Add(radialPoint);
                 normals.Add((radialPoint - center).normalized);
                 uv.Add(new Vector2(j / (float)radialSegments, i));
