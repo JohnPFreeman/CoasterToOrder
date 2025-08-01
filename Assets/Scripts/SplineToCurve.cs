@@ -27,11 +27,11 @@ public class SplineToCurve : MonoBehaviour
         Spline trackSpline = splineContainer.Spline;
         trackSpline.Clear();
 
-        List<Transform> knotPoints = curveGen.controlPoints;
+        List<Vector3> knotPoints = curveGen.mainPoints;
 
         for (int i = 0; i < knotPoints.Count; i++) 
         { 
-           trackSpline.Add(new BezierKnot(knotPoints[i].position), TangentMode.AutoSmooth);
+           trackSpline.Add(new BezierKnot(knotPoints[i]), TangentMode.AutoSmooth);
         }
 
     }

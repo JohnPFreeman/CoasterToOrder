@@ -13,28 +13,35 @@ public class CoasterGen : MonoBehaviour
     [Range(0, 1)] public float radiusTubes = 0.2f;
     [Range(0, 1)] public float radiusSmaller = 0.1f;
     [Range(0, 1)] public float radiusInners = 0.05f;
+    [Range(0, 1)] public float radiusPosts = 0.4f;
     public int radialSegments = 16;
 
     [Header("Mesh GameObjects")]
     public GameObject RightBar;
     public GameObject LeftBar;
     public GameObject InnerBars;
+    public GameObject PostBar;
 
     [Header("Materials")]
     public Material MainTrackColor;
     public Material InnerTrackColor;
     public Material BarTrackColor;
+    public Material PostColor;
 
     //Points Lists
     private List<Vector3> pointsMain;
     private List<Vector3> pointsLeft;
     private List<Vector3> pointsRight;
 
+    public List<Vector3> pointsPosts;
+    public List<Vector3> pointsPostsGround;
+
     //Meshes
     private Mesh meshMain;
     private Mesh meshLeft;
     private Mesh meshRight;
     private Mesh meshInners;
+    private Mesh meshPosts;
 
     private void Update()
     {
@@ -43,13 +50,32 @@ public class CoasterGen : MonoBehaviour
         pointsLeft = curveGenorator.leftPoints;
         pointsRight = curveGenorator.rightPoints;
 
+ 
+        
+
         //Generate Main Tube
         GenerateTube(meshMain, pointsMain, radiusTubes, GetComponent<MeshFilter>());
         GenerateTube(meshLeft, pointsLeft, radiusSmaller, RightBar.GetComponent<MeshFilter>());
         GenerateTube(meshRight, pointsRight, radiusSmaller, LeftBar.GetComponent<MeshFilter>());
+        
 
         //Generate Inner Connection Bars
-        GenerateCylinders(curveGenorator.mainPoints, curveGenorator.leftPoints, curveGenorator.mainPoints, curveGenorator.rightPoints, meshInners, InnerBars.GetComponent<MeshFilter>());
+        GenerateCylinders(curveGenorator.mainPoints, curveGenorator.leftPoints, curveGenorator.mainPoints, curveGenorator.rightPoints, meshInners, InnerBars.GetComponent<MeshFilter>(), radiusInners);
+
+
+        //Generate Support Posts
+        pointsPosts.Clear();
+        pointsPostsGround.Clear();
+        for (int i = 0; i < curveGenorator.controlPoints.Count; i++)
+        {
+            pointsPosts.Add(curveGenorator.controlPoints[i].position);
+            pointsPostsGround.Add(new Vector3(curveGenorator.controlPoints[i].position.x, 0, curveGenorator.controlPoints[i].position.z));
+
+        }
+
+        GenerateCylinders(pointsPosts, pointsPostsGround, new List<Vector3>(), new List<Vector3>(), meshPosts, PostBar.GetComponent<MeshFilter>(), radiusPosts);
+        Debug.Log(new Vector2(pointsPosts[0][0], curveGenorator.controlPoints[0].position[0]));
+        //Debug.Log(pointsPostsGround);
 
         //Update Track Colors
         if (MainTrackColor != null) { GetComponent<MeshRenderer>().material = MainTrackColor; };
@@ -58,7 +84,7 @@ public class CoasterGen : MonoBehaviour
         if (BarTrackColor != null) { LeftBar.GetComponent<MeshRenderer>().material = BarTrackColor; };
     }
 
-    void GenerateCylinders(List<Vector3> list1, List<Vector3> list2, List<Vector3> list3, List<Vector3> list4, Mesh targetMesh, MeshFilter targetMeshFilter)
+    void GenerateCylinders(List<Vector3> list1, List<Vector3> list2, List<Vector3> list3, List<Vector3> list4, Mesh targetMesh, MeshFilter targetMeshFilter, float radius)
     {
         //Make sure everything is correct input
         if (list1 == null || list2 == null || list3 == null || list4 == null)
@@ -83,13 +109,13 @@ public class CoasterGen : MonoBehaviour
         //Generate cylinders for List 1 > List 2
         for (int i = 0; i < list1.Count; i++)
         {
-            GenerateCylinder(list1[i], list2[i], vertices, triangles, uv, normals);
+            GenerateCylinder(list1[i], list2[i], vertices, triangles, uv, normals, radius);
         }
 
         //Generate cylinders for List 3 > List 4
         for (int i = 0; i < list3.Count; i++)
         {
-            GenerateCylinder(list3[i], list4[i], vertices, triangles, uv, normals);
+            GenerateCylinder(list3[i], list4[i], vertices, triangles, uv, normals, radius);
         }
 
         //Update to the mesh
@@ -101,7 +127,7 @@ public class CoasterGen : MonoBehaviour
         targetMeshFilter.mesh = targetMesh;
     }
 
-    void GenerateCylinder(Vector3 start, Vector3 end, List<Vector3> vertices, List<int> triangles, List<Vector2> uv, List<Vector3> normals)
+    void GenerateCylinder(Vector3 start, Vector3 end, List<Vector3> vertices, List<int> triangles, List<Vector2> uv, List<Vector3> normals, float radius)
     {
         Vector3 direction = (end - start).normalized;
         float length = Vector3.Distance(start, end);
