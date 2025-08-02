@@ -74,7 +74,7 @@ public class CoasterGen : MonoBehaviour
         }
 
         GenerateCylinders(pointsPostsGround, pointsPosts, new List<Vector3>(), new List<Vector3>(), meshPosts, PostBar.GetComponent<MeshFilter>(), radiusPosts);
-        Debug.Log(new Vector2(pointsPosts[0][0], curveGenorator.controlPoints[0].position[0]));
+        //Debug.Log(new Vector2(pointsPosts[0][0], curveGenorator.controlPoints[0].position[0]));
         //Debug.Log(pointsPostsGround);
 
         //Update Track Colors
