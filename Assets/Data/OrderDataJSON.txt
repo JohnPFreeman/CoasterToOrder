@@ -3,6 +3,7 @@
 		{
 			"level" : 1,
 			"xPosition" : -130,
+			"photo" : "Assets/OrderAssets/bill.png",
 			"customerName" : "Bill",
 			"budget" : 10800,
 			"dimensions" : [5, 8],

@@ -16,6 +16,7 @@ public class Order : MonoBehaviour
     public TextMeshPro NameText;
     public TextMeshPro BudgetText;
     public TextMeshPro DescriptionText;
+    public GameObject approvedObject;
 
     public void SetOrderFields(OrderData order)
     {
@@ -26,6 +27,12 @@ public class Order : MonoBehaviour
         NameText.text = order.customerName;
         BudgetText.text = "$" + order.budget.ToString();
         DescriptionText.text = order.description;
+        approvedObject.SetActive(false);
+    }
+
+    public void approveOrder()
+    {
+        approvedObject.SetActive(true);
     }
 
     private void OnMouseEnter()
@@ -44,6 +51,7 @@ public class Order : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, new Vector3(0, 0, -30), 1);
             isClicked = true;
+            approveOrder();
         }
         else
         {

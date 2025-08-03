@@ -14,6 +14,7 @@ public class OrderDataReader : MonoBehaviour
     {
         public int level; // Which level this order will be presented in 
         public int xPosition; // To set the order as left, center, or right
+        public string photo;
         public string customerName;
         public int budget;
         public int[] dimensions; // [x, y]

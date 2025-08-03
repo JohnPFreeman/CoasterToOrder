@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\data\\orderdatajson.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\data\\orderdatajson.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|c:\\users\\megan\\onedrive\\documents\\github\\coastertoorder\\assets\\scripts\\orderdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\orderdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orderdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\orderscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orderscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|c:\\users\\megan\\onedrive\\documents\\github\\coastertoorder\\assets\\scripts\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "OrderDataReader.cs",
               "DocumentMoniker": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\OrderDataReader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OrderDataReader.cs",
               "ToolTip": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\OrderDataReader.cs",
               "RelativeToolTip": "Assets\\Scripts\\OrderDataReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T05:22:53.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OrderDataJSON.txt",
               "DocumentMoniker": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Data\\OrderDataJSON.txt",
               "RelativeDocumentMoniker": "Assets\\Data\\OrderDataJSON.txt",
               "ToolTip": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Data\\OrderDataJSON.txt",
               "RelativeToolTip": "Assets\\Data\\OrderDataJSON.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-08-02T02:33:53.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "OrderSceneManager.cs",
               "DocumentMoniker": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\OrderSceneManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OrderSceneManager.cs",
               "ToolTip": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\OrderSceneManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\OrderSceneManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T23:50:39.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\Order.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Order.cs",
               "ToolTip": "C:\\Users\\megan\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\Order.cs",
               "RelativeToolTip": "Assets\\Scripts\\Order.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T20:18:03.806Z",
               "EditorCaption": ""
