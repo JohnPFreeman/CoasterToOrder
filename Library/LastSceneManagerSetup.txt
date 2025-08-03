@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Coaster Scene.unity
+=======
+- path: Assets/Scenes/OrderScene.unity
+>>>>>>> 6138bfb728ef328111528ed29baca5639a7be4d8
   isLoaded: 1
   isActive: 1
   isSubScene: 0
