@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|c:\\users\\jpf32\\onedrive\\documents\\github\\coastertoorder\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|c:\\users\\jpf32\\onedrive\\documents\\github\\coastertoorder\\assets\\scripts\\coastergen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coastergen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\splinetocurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\splinetocurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\movementphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movementphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|c:\\users\\jpf32\\onedrive\\documents\\github\\coastertoorder\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\splinetocurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\splinetocurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4430EC72-E4A2-88B4-1BEC-95166670CCAB}|Assembly-CSharp.csproj|C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\assets\\scripts\\curvegen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CameraMovement.cs",
               "DocumentMoniker": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\CameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraMovement.cs",
               "ToolTip": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\CameraMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraMovement.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAYwDIAAAAJAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T02:11:40.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MovementPhysics.cs",
               "DocumentMoniker": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\MovementPhysics.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovementPhysics.cs",
@@ -60,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SplineToCurve.cs",
               "DocumentMoniker": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\SplineToCurve.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SplineToCurve.cs",
@@ -73,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CoasterGen.cs",
               "DocumentMoniker": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\CoasterGen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoasterGen.cs",
               "ToolTip": "C:\\Users\\jpf32\\OneDrive\\Documents\\GitHub\\CoasterToOrder\\Assets\\Scripts\\CoasterGen.cs",
               "RelativeToolTip": "Assets\\Scripts\\CoasterGen.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAjwEsAAAAiAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAewC4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T04:10:37.475Z",
               "EditorCaption": ""
