@@ -13,35 +13,35 @@ public class CoasterGen : MonoBehaviour
     [Range(0, 1)] public float radiusTubes = 0.2f;
     [Range(0, 1)] public float radiusSmaller = 0.1f;
     [Range(0, 1)] public float radiusInners = 0.05f;
-    [Range(0, 1)] public float radiusPosts = 0.4f;
+    //[Range(0, 1)] public float radiusPosts = 0.4f;
     public int radialSegments = 16;
 
     [Header("Mesh GameObjects")]
     public GameObject RightBar;
     public GameObject LeftBar;
     public GameObject InnerBars;
-    public GameObject PostBar;
+    //public GameObject PostBar;
 
     [Header("Materials")]
     public Material MainTrackColor;
     public Material InnerTrackColor;
     public Material BarTrackColor;
-    public Material PostColor;
+    //public Material PostColor;
 
     //Points Lists
     private List<Vector3> pointsMain;
     private List<Vector3> pointsLeft;
     private List<Vector3> pointsRight;
 
-    public List<Vector3> pointsPosts;
-    public List<Vector3> pointsPostsGround;
+    //public List<Vector3> pointsPosts;
+    //public List<Vector3> pointsPostsGround;
 
     //Meshes
     private Mesh meshMain;
     private Mesh meshLeft;
     private Mesh meshRight;
     private Mesh meshInners;
-    private Mesh meshPosts;
+    //private Mesh meshPosts;
 
     private void Update()
     {
@@ -64,16 +64,16 @@ public class CoasterGen : MonoBehaviour
 
 
         //Generate Support Posts
-        pointsPosts.Clear();
+        /*pointsPosts.Clear();
         pointsPostsGround.Clear();
         for (int i = 0; i < curveGenorator.controlPoints.Count; i++)
         {
             pointsPosts.Add(curveGenorator.controlPoints[i].position);
             pointsPostsGround.Add(new Vector3(curveGenorator.controlPoints[i].position.x, 0, curveGenorator.controlPoints[i].position.z));
 
-        }
+        }*/
 
-        GenerateCylinders(pointsPostsGround, pointsPosts, new List<Vector3>(), new List<Vector3>(), meshPosts, PostBar.GetComponent<MeshFilter>(), radiusPosts);
+        //GenerateCylinders(pointsPostsGround, pointsPosts, new List<Vector3>(), new List<Vector3>(), meshPosts, PostBar.GetComponent<MeshFilter>(), radiusPosts);
         //Debug.Log(new Vector2(pointsPosts[0][0], curveGenorator.controlPoints[0].position[0]));
         //Debug.Log(pointsPostsGround);
 
